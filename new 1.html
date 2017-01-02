@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<title>j query intro</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body onload="clock()">
+<div>
+
+</div>
+<h1 id="a"></h1>
+<h1 id="d"></h1>
+<h1 id="b"></h1>
+<script>
+
+function clock(){
+var d = new Date();
+var e =d.getHours();
+var f =d.getMinutes();
+var g =d.getSeconds();
+document.getElementById("a").innerHTML=e;
+document.getElementById("d").innerHTML=f;
+document.getElementById("b").innerHTML=g;
+
+setTimeout(clock,1000);//recursive function...vvi
+//alert(g)
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
